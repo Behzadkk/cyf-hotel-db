@@ -589,7 +589,7 @@ function invoiceGen(array) {
     console.log(
       `INSERT INTO invoices (reservation_id, total, surcharges, invoice_date_time, paid) VALUES (${reservationId}, ${
         array[i].total
-      }, ${array[i].surcharges}, ${array[i].invoiceDateTime}, ${
+      }, ${array[i].surcharges}, "${array[i].invoiceDateTime}", ${
         array[i].paid
       });`
     );

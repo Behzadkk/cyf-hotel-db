@@ -32,11 +32,11 @@
     <div class="container">
       <div class="row">
         <div class="col-10">
-          <h1>Reservations</h1>
+          <h1>invoices</h1>
         </div>
         <div class="col-2">
           <button type="submit" class="btn btn-primary fn-fetch">
-            Fetch Reservations
+            Fetch invoices
           </button>
         </div>
       </div>
@@ -46,11 +46,11 @@
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Customer ID</th>
-                <th>Room ID</th>
-                <th>Chek In Date</th>
-                <th>Check Out Date</th>
-                <th>Room Price</th>
+                <th>Reservation ID</th>
+                <th>Total</th>
+                <th>Surcharges</th>
+                <th>Invoice Date Time</th>
+                <th>Paid</th>
               </tr>
             </thead>
             <tbody id="rows">
@@ -90,11 +90,11 @@
     <script id="template" type="text/x-handlebars-template">
       <tr>
         <th scope="row">{{ id }}</th>
-        <td>{{ customer_id }}</td>
-        <td>{{ room_id }}</td>
-        <td>{{ chek_in_date }}</td>
-        <td>{{ check_out_date }}</td>
-        <td>{{ room_price }}</td>
+        <td>{{ reservation_id }}</td>
+        <td>{{ total }}</td>
+        <td>{{ surcharges }}</td>
+        <td>{{ invoice_date_time }}</td>
+        <td>{{ paid }}</td>
       </tr>
     </script>
     <script type="text/javascript">
@@ -103,13 +103,13 @@
 
         $.ajax({
           method: "GET",
-          url: "/api/reservations/"
+          url: "/api/invoices/"
         }).done(data => {
           const source = $("#template").html();
           const template = Handlebars.compile(source);
 
-          const rows = data.reservations.map(reservation => {
-            return template(reservation);
+          const rows = data.invoices.map(invoice => {
+            return template(invoice);
           });
 
           $("#rows").html(rows.join());

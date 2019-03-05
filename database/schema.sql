@@ -53,7 +53,7 @@ CREATE TABLE  rooms (
 (id)
 );
 
-CREATE TABLE  reservations (
+CREATE TABLE  reservations ( 
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   customer_id INTEGER NOT NULL,
   room_id INTEGER NOT NULL,
@@ -312,80 +312,80 @@ VALUES
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (4, 40.00, 93.00, 2017-06-24, false);
+  (4, 40.00, 93.00, "2017-06-24", false);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (9, 113.00, 43.00, 2017-06-07, true);
+  (9, 113.00, 43.00, "2017-06-07", true);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (11, 100.00, 85.00, 2017-09-19, false);
+  (11, 100.00, 85.00, "2017-09-19", false);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (3, 146.00, 90.00, 2017-12-16, false);
+  (3, 146.00, 90.00, "2017-12-16", false);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (15, 189.00, 92.00, 2017-08-30, true);
+  (15, 189.00, 92.00, "2017-08-30", true);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (3, 169.00, 70.00, 2017-06-24, true);
+  (3, 169.00, 70.00, "2017-06-24", true);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (17, 70.00, 56.00, 2017-05-01, false);
+  (17, 70.00, 56.00, "2017-05-01", false);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (3, 176.00, 19.00, 2017-10-27, false);
+  (3, 176.00, 19.00, "2017-10-27", false);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (20, 70.00, 76.00, 2018-01-17, true);
+  (20, 70.00, 76.00, "2018-01-17", true);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (11, 60.00, 81.00, 2017-05-28, true);
+  (11, 60.00, 81.00, "2017-05-28", true);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (1, 184.00, 89.00, 2017-11-01, true);
+  (1, 184.00, 89.00, "2017-11-01", true);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (11, 87.00, 35.00, 2017-12-15, false);
+  (11, 87.00, 35.00, "2017-12-15", false);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (16, 27.00, 5.00, 2017-04-04, true);
+  (16, 27.00, 5.00, "2017-04-04", true);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (11, 62.00, 16.00, 2017-12-26, true);
+  (11, 62.00, 16.00, "2017-12-26", true);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (18, 111.00, 21.00, 2017-07-05, false);
+  (18, 111.00, 21.00, "2017-07-05", false);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (14, 78.00, 94.00, 2017-04-09, false);
+  (14, 78.00, 94.00, "2017-04-09", false);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (15, 168.00, 96.00, 2017-03-29, false);
+  (15, 168.00, 96.00, "2017-03-29", false);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (9, 98.00, 98.00, 2017-05-09, true);
+  (9, 98.00, 98.00, "2017-05-09", true);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (16, 113.00, 34.00, 2017-04-09, false);
+  (16, 113.00, 34.00, "2017-04-09", false);
 INSERT INTO invoices
   (reservation_id, total, surcharges, invoice_date_time, paid)
 VALUES
-  (15, 117.00, 29.00, 2017-06-30, false);
+  (15, 117.00, 29.00, "2017-06-30", false);
